@@ -1,0 +1,220 @@
+@media (max-width: 1200px) {
+  .header {
+    &__wrapper {
+      max-width: 768px;
+    }
+  }
+
+  .card {
+    width: 200px;
+    font-size: 16px;
+
+    &__category {
+      font-weight: 400;
+      font-size: 12px;
+      top: 120px;
+    }
+
+    &__category-long {
+      font-size: 12px;
+      top: 10px;
+      padding: 0 5px;
+      margin-top: 0;
+    }
+
+    &__figcaption-shot {
+      font-size: 16px;
+    }
+
+    &__category-shotb {
+      top: 70px;
+    }
+
+    &__large {
+      width: 100%;
+      background-position: 100% 100%;
+    }
+
+    &__link-opinion {
+      font-size: 14px;
+    }
+
+    &__title-opinion {
+      margin-bottom: 25px;
+    }
+
+    &__category-tehnology {
+      top: 140px;
+    }
+
+    &__category-nophoto {
+      top: 0;
+    }
+
+    &--half {
+      width: 480px;
+    }
+  }
+
+  .block--three {
+    .block--opinion {
+      padding-bottom: 0;
+    }
+
+    .card__title-opinion {
+      padding-top: 50px;
+    }
+
+    .card__figcaption-opinion {
+      &::after,
+      &::before {
+        top: 20px;
+      }
+    }
+  }
+
+  .card--width {
+    width: 250px;
+  }
+
+  .block {
+    margin: 0;
+  }
+
+  .block--two {
+    .desk {
+      display: block;
+    }
+  }
+
+  .container {
+    width: 768px;
+  }
+
+  .events {
+    width: 720px;
+    min-height: 400px;
+
+    &__block {
+      width: 45%;
+    }
+
+    &__link {
+      color: #000000;
+    }
+
+    &__time {
+      color: #000000;
+    }
+  }
+
+  .advertising__wrapper {
+    .laptop {
+      display: none;
+    }
+  }
+
+  .card__explanation {
+    padding-bottom: 40px;
+  }
+
+  .advertising__text {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .slider {
+    max-width: 100%;
+
+    &__container {
+      max-width: 600px;
+    }
+  }
+
+  .slider-first,
+  .slider-second {
+    max-width: 768px;
+  }
+
+  .slider-second {
+    .card {
+      width: 300px;
+    }
+  }
+
+  .slider-third__page {
+    .page__title-link {
+      font-size: 25px;
+    }
+
+    .page__figcaption {
+      width: 600px;
+      margin-top: 45px;
+    }
+
+    .page__explanation {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+  }
+
+  .slider-third__figcaption {
+    top: 30%;
+    left: 60%;
+  }
+
+  .slider-third__explanation {
+    margin: 0;
+  }
+
+  .block-five {
+    margin-top: 30px;
+  }
+
+  .card__title--five {
+    padding-bottom: 30px;
+  }
+
+  .card__explanation--five {
+    font-size: 12px;
+  }
+
+  .footer {
+    &__menu {
+      padding-bottom: 20px;
+    }
+
+    &__wrapper {
+      max-width: 768px;
+      padding: 0 31px;
+    }
+
+    &__sign {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 35%;
+    }
+
+    &__sign-text {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-left: 0;
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    &--footer {
+      display: block;
+    }
+
+    &__text-block1,
+    &__text-block2 {
+      font-size: 12px;
+    }
+  }
+}

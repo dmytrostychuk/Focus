@@ -11,6 +11,9 @@
 
 @import "fonts";
 @import "nullstyle";
+@import "table";
+@import "mobile";
+@import "laptop";
 
 body {
   font-family: "CeraPro-Regular";
@@ -19,6 +22,10 @@ body {
   line-height: 1.5;
   background-color: #ffffff;
   color: #000000;
+}
+
+.laptop {
+  display: none;
 }
 
 body.lock {
@@ -47,7 +54,7 @@ a:hover {
   color: #ed3237;
 }
 
-// header 
+// header
 .header {
   position: relative;
   z-index: 210;
@@ -262,7 +269,7 @@ a:hover {
   }
 
   &__tittle {
-    margin: 12px 0;
+    margin: 12px 5px;
     text-align: center;
   }
 }
@@ -357,16 +364,6 @@ a:hover {
 .special__block {
   position: relative;
   overflow: hidden;
-}
-
-.special__block::after {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  height: 5px;
-  width: 100%;
-  transform: translateX(-100%);
-  background-color: #ed3237;
 }
 
 .page {
@@ -466,7 +463,7 @@ a:hover {
       left: 0;
     }
 
-    span {
+    .table {
       display: block;
       color: #ffffff;
       font-size: 100px;
@@ -721,6 +718,7 @@ a:hover {
 
   &__title {
     padding-bottom: 10px;
+    padding-right: 20px;
   }
 
   &__link {
@@ -744,6 +742,7 @@ a:hover {
 
   .card__title {
     line-height: 22px;
+    padding-right: 5px;
   }
 }
 
@@ -757,6 +756,10 @@ a:hover {
     margin-top: 55px;
     padding: 0 55px;
     background-color: #ed3237;
+
+    .laptop {
+      display: block;
+    }
   }
 
   &__content {
@@ -892,7 +895,7 @@ a:hover {
   }
 
   &__title-link {
-    bottom: 32%;
+    bottom: 20%;
     left: 50%;
     transform: translate(-50%, 50%);
     width: 340px;
@@ -900,7 +903,15 @@ a:hover {
   }
 
   &__link-span {
-    padding-bottom: 60px;
+    position: absolute;
+    bottom: 230px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 100px;
+  }
+
+  &__link-text {
+    padding-bottom: 20px;
   }
 
   &__photo {
@@ -927,14 +938,9 @@ a:hover {
 
   &__title-linkw {
     width: 350px;
-    padding-top: 100px;
     color: #000000;
     line-height: 28px;
     font-size: 24px;
-  }
-
-  &__title-linkb {
-    margin-bottom: 25px;
   }
 
   &__category-black {
@@ -960,6 +966,7 @@ a:hover {
   grid-row-gap: 38px;
 
   .card__title-shot {
+    max-width: 424px;
     margin-bottom: 40px;
     font-size: 24px;
     line-height: 30px;
@@ -1052,6 +1059,7 @@ a:hover {
 .page__tittle--popular {
   font-family: "CeraPro-Medium";
   margin-bottom: 37px;
+  margin-left: 6%;
 }
 
 // block--four
@@ -1206,6 +1214,10 @@ a:hover {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+  }
+
+  &__block {
+    display: block;
   }
 
   &__text-block1,
