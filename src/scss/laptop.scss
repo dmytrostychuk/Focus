@@ -8,7 +8,7 @@
   }
 
   .container {
-    max-width: 1200px;
+    max-width: 1185px;
     padding: 0 31px;
   }
 
@@ -21,35 +21,54 @@
     &__title {
       flex-grow: 1;
     }
+
+    &__lang {
+      margin-right: 15px;
+    }
+
+    .lang-ua {
+      margin-right: 10px;
+    }
+  }
+
+  .search {
+    svg {
+      vertical-align: middle;
+    }
+  }
+
+  .nav {
+    &__wrapper {
+      min-height: 900px;
+    }
+
+    &__container {
+      width: 1440px;
+      padding: 0 31px;
+    }
   }
 
   // special
   .special {
-    &__container {
-      display: none;
-    }
+    margin-bottom: 25px;
 
     &__block {
       width: 24%;
     }
 
-    &__block::after {
-      display: none;
-    }
-
-    .block-1 {
+    .block-a {
       background-position: center;
     }
 
-    .block-2 {
+    .block-b {
       background-position: center;
     }
 
-    .block-3 {
+    .block-c {
       background-position: center;
     }
 
-    .block-4 {
+    .block-d {
       background-position: center;
     }
   }
@@ -65,38 +84,26 @@
   // card
   .card {
     width: 300px;
+    min-height: 280px;
 
     &__large {
-      width: 60%;
+      width: 65%;
     }
 
     &--half {
       width: 623px;
     }
+
+    &__opinion-autor {
+      margin-top: 15px;
+    }
   }
 
-  .events {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 978px;
-    overflow-y: hidden;
-    margin: 0 auto;
+  .preview {
+    margin-bottom: 55px;
 
-    &__block {
-      width: 33.3%;
-      border-bottom: 1px solid #929292;
-
-      padding: 0 7px;
-    }
-
-    &__link {
-      color: #000000;
-    }
-
-    &__time {
-      color: #000000;
+    &__tittle {
+      margin-top: 25px;
     }
   }
 
@@ -107,45 +114,54 @@
   }
 
   .slider {
-    max-width: 100%;
-
     &__container {
-      max-width: 1000px;
+      max-width: 962px;
+    }
+
+    &__inner {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: #f4f4f4;
     }
   }
 
-  .slider-first,
-  .slider-second {
-    max-width: 1200px;
-  }
-
-  .slider-first {
-    max-width: 1200px;
-
+  .slider-a {
     .card {
       width: 408px;
     }
+
+    &__prev::after,
+    &__next::after {
+      margin-top: 120px;
+    }
   }
 
-  .slider-second {
+  .slider-b {
     margin-top: 40px;
+
+    &__prev::after,
+    &__next::after {
+      margin-top: 113px;
+    }
+  }
+
+  .page__tittle {
+    padding: 0;
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-bottom: 25px;
   }
 
   .page__title--slider {
-    padding-left: 0;
+    margin-left: 115px;
   }
 
   .page__tittle--popular {
-    padding-top: 30px;
-    margin-left: 2%;
+    margin-left: 0;
   }
 
-  .page__title--country {
-    padding-top: 30px;
-    padding-bottom: 20px;
-  }
-
-  .block-five {
+  .block--i {
     margin-top: 50px;
   }
 
@@ -153,6 +169,11 @@
     &__wrapper {
       max-width: 1200px;
       padding: 0 31px;
+    }
+
+    &__item {
+      font-size: 14px;
+      width: 23%;
     }
   }
 }

@@ -6,19 +6,22 @@
   }
 
   .card {
-    width: 200px;
+    width: 210px;
     font-size: 16px;
+    min-height: 100px;
+    line-height: 1.2;
 
     &__category {
+      padding: 1px 7px;
       font-weight: 400;
       font-size: 12px;
-      top: 120px;
+      top: 140px;
     }
 
     &__category-long {
       font-size: 12px;
-      top: 10px;
-      padding: 0 5px;
+      top: 15px;
+      padding: 1px 5px;
       margin-top: 0;
     }
 
@@ -31,6 +34,7 @@
     }
 
     &__large {
+      border: 2px solid #000;
       width: 100%;
       background-position: 100% 100%;
     }
@@ -52,11 +56,75 @@
     }
 
     &--half {
-      width: 480px;
+      width: 447px;
+    }
+
+    &--opinion {
+      padding: 15px 15px;
+    }
+
+    &__opinion-autor {
+      margin-top: 40px;
+    }
+
+    &__title-long {
+      padding-bottom: 30px;
+      .table {
+        font-size: 60px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &--table {
+      margin-top: 50px;
+    }
+
+    &__title-category {
+      line-height: 1.2;
+    }
+
+    &__figcaption-nophoto {
+      padding-top: 15px;
+    }
+
+    &--noborder {
+      border: none;
     }
   }
 
-  .block--three {
+  .card__title-link {
+    line-height: 1.2;
+  }
+
+  .page {
+    &__tittle {
+      margin-left: 0;
+    }
+
+    &__title-link {
+      font-size: 24px;
+    }
+
+    &__explanation {
+      font-size: 16px;
+    }
+
+    &__category {
+      font-size: 12px;
+      margin-top: 15px;
+      padding: 0 10px;
+    }
+
+    &__figcaption {
+      margin-top: 50px;
+    }
+
+    &__title--slider {
+      margin-left: 30px;
+    }
+  }
+
+  .block--g {
     .block--opinion {
       padding-bottom: 0;
     }
@@ -73,39 +141,30 @@
     }
   }
 
-  .card--width {
-    width: 250px;
-  }
-
   .block {
     margin: 0;
   }
 
-  .block--two {
+  .block--f {
+    .card__title {
+      line-height: 1.2;
+    }
+
     .desk {
       display: block;
     }
   }
 
-  .container {
-    width: 768px;
+  .block--g {
+    line-height: 1.2;
+
+    .card__title-shot {
+      margin: 0;
+    }
   }
 
-  .events {
-    width: 720px;
-    min-height: 400px;
-
-    &__block {
-      width: 45%;
-    }
-
-    &__link {
-      color: #000000;
-    }
-
-    &__time {
-      color: #000000;
-    }
+  .container {
+    width: 750px;
   }
 
   .advertising__wrapper {
@@ -114,13 +173,37 @@
     }
   }
 
+  .preview {
+    .desk {
+      display: none;
+    }
+
+    &__tittle {
+      margin-top: 10px;
+    }
+
+    &__tittle-link {
+      font-size: 24px;
+    }
+
+    &__more-link {
+      font-size: 14px;
+    }
+  }
+
+  .autor__white {
+    font-size: 12px;
+  }
+
   .card__explanation {
+    font-size: 12px;
+    padding-top: 10px;
     padding-bottom: 40px;
   }
 
   .advertising__text {
     font-size: 16px;
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
   .slider {
@@ -129,20 +212,29 @@
     &__container {
       max-width: 600px;
     }
+
+    &__inner {
+      max-width: 752px;
+    }
   }
 
-  .slider-first,
-  .slider-second {
-    max-width: 768px;
+  .slider-a {
+    margin: 0 auto;
   }
 
-  .slider-second {
+  .slider-a,
+  .slider-b {
+    margin-top: 55px;
+    width: 100%;
+  }
+
+  .slider-b {
     .card {
       width: 300px;
     }
   }
 
-  .slider-third__page {
+  .slider-c__page {
     .page__title-link {
       font-size: 25px;
     }
@@ -158,24 +250,20 @@
     }
   }
 
-  .slider-third__figcaption {
+  .slider-c__figcaption {
     top: 30%;
     left: 60%;
   }
 
-  .slider-third__explanation {
+  .slider-c__explanation {
     margin: 0;
   }
 
-  .block-five {
-    margin-top: 30px;
+  .block--i {
+    margin-top: 50px;
   }
 
-  .card__title--five {
-    padding-bottom: 30px;
-  }
-
-  .card__explanation--five {
+  .card__explanation--i {
     font-size: 12px;
   }
 
@@ -194,7 +282,7 @@
     }
 
     &__item {
-      width: 35%;
+      width: 45%;
     }
 
     &__sign-text {
@@ -202,6 +290,7 @@
       justify-content: space-between;
       width: 100%;
       margin-left: 0;
+      margin-top: 10px;
 
       p {
         font-size: 14px;
@@ -215,6 +304,10 @@
     &__text-block1,
     &__text-block2 {
       font-size: 12px;
+    }
+
+    .button {
+      margin-top: 0;
     }
   }
 }
