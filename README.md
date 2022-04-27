@@ -6,9 +6,8 @@
     dmytrostychuk.github.io/Focus/
   </a>
 </h1>
-<ul class="list6b"  padding:0;
-    list-style: none;>
-    <li>Элемент списка</li>
+<ul style="font-size:30px;">
+    <li style="font-size:500px;">Элемент списка</li>
     <li>Элемент списка</li>
     <li>Элемент списка</li>
     <li>Элемент списка</li>
